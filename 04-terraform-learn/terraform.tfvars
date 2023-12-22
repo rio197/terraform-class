@@ -1,5 +1,5 @@
-project      = "your project id"
-credentials  = "path to service account key file.json"
+project      = "terraform-learn-369718"
+#credentials  = "path to service account key file.json"
 region       = "us-central1"
 zone         = "us-central1-a"
 machine_type = "f1-micro"

@@ -7,9 +7,9 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket      = "your GCS bucket"
+    bucket      = "terraform-learn-bucket"
     prefix      = "terraform/state"
-    credentials = "path to service account key file.json"
+    # credentials = "path to service account key file.json"
   }
 }
 
@@ -17,13 +17,12 @@ provider "google" {
   region      = var.region
   zone        = var.zone
   project     = var.project
-  credentials = var.credentials
-
+  #credentials = var.credentials
 }
 
 locals {
   application_name = "microservice1"
-  environement     = "staging"
+  environment     = "staging"
 }
 
 resource "google_compute_instance" "default1" {
@@ -31,7 +30,7 @@ resource "google_compute_instance" "default1" {
   machine_type = var.machine_type
   labels = {
     application_name = local.application_name
-    environement     = local.environement
+    environment     = local.environment
   }
 
   boot_disk {
@@ -55,7 +54,7 @@ resource "google_compute_instance" "default2" {
   machine_type = var.machine_type
   labels = {
     application_name = local.application_name
-    environement     = local.environement
+    environment     = local.environment
   }
   boot_disk {
     initialize_params {

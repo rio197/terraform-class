@@ -1,11 +1,12 @@
 variable "project" {
   description = "The ID of the Google Cloud project"
+  default = "terraform-learn-369718"
 }
 
-variable "credentials" {
-  description = "Path to the JSON file used to describe your account credentials"
-  sensitive   = true
-}
+## variable "credentials" {
+##  description = "Path to the JSON file used to describe your account credentials"
+##  sensitive   = true
+##}
 
 variable "region" {
   default = "us-west1"
