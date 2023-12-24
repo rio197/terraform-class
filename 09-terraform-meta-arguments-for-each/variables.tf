@@ -10,9 +10,9 @@ variable "zone" {
 
 }
 
-variable "credentials" {
-
-}
+//variable "credentials" {
+//
+//}
 
 variable "virtual_machines1" {
   type    = set(string)

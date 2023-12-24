@@ -10,9 +10,9 @@ variable "zone" {
 
 }
 
-variable "credentials" {
-
-}
+//variable "credentials" {
+//
+//}
 
 variable "vpc" {
   default = "default"
