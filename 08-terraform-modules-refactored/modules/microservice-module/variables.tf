@@ -16,7 +16,7 @@ variable "pods_per_nodes" {
 }
 
 variable "vpc" {
-  default = "defualt"
+  default = "default"
 }
 
 variable "subnet" {
