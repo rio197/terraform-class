@@ -73,7 +73,7 @@ resource "google_redis_instance" "memory-store-primary" {
   tier               = var.tier
 }
 
-resource "google_storage_bucket" "cloud-storge-primary" {
+resource "google_storage_bucket" "cloud-storage-primary" {
   name                        = "${var.cloud_storage_name_staging}-${var.application_name_staging}"
   location                    = var.region
   force_destroy               = true
