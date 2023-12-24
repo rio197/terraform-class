@@ -1,5 +1,5 @@
 module "microservice_production" {
-  source           = "github.com/vineet96/microservice-module.git?ref=v0.0.2"
+  source           = "./modules/microservice-module"
   gke_cluster_name = var.gke_cluster_name_production
   region           = var.region
   pods_per_nodes   = var.pods_per_nodes_production

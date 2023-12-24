@@ -23,5 +23,5 @@ memory_size_gb_staging         = 1
 memeory_tier_production        = "BASIC"
 memeory_tier_staging           = "BASIC"
 
-cloud_storage_name_staging    = "your cloud storage name in staging"
-cloud_storage_name_production = "your cloud storage name in production"
+cloud_storage_name_staging    = "microservice-storage-staging"
+cloud_storage_name_production = "microservice-storage-production"
