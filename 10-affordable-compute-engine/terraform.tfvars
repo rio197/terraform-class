@@ -1,3 +1,2 @@
-project      = "your project id"
-credentials  = "path to service account key jason file"
-
+project      = "terraform-learn-369718"
+//credentials  = "path to service account key jason file"
