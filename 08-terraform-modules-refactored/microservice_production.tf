@@ -1,4 +1,4 @@
-module "microserice_production" {
+module "microservice_production" {
   source           = "github.com/vineet96/microservice-module.git?ref=v0.0.2"
   gke_cluster_name = var.gke_cluster_name_production
   region           = var.region

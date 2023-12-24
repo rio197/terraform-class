@@ -1,4 +1,4 @@
-module "microserice_staging" {
+module "microservice_staging" {
   source           = "github.com/vineet96/microservice-module.git?ref=v0.0.1"
   gke_cluster_name = var.gke_cluster_name_staging
   region           = var.region
