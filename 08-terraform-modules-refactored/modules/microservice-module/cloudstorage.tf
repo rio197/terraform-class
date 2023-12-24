@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "cloud-storge-primary" {
+resource "google_storage_bucket" "cloud-storage-primary" {
   name          = var.cloud_storage_name
   location      = var.region
   force_destroy = true
