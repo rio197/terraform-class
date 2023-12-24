@@ -19,7 +19,6 @@ module "gcs_buckets" {
   project_id = var.project
   #names      = [terraform-learn-bucket04",terraform-learn-bucket06","terraform-learn-bucket08", "terraform-learn-bucket09","terraform-learn-bucket10","terraform-learn-bucket12"] 
   names      = ["terraform-learn-bucket08", "terraform-learn-bucket09","terraform-learn-bucket10","terraform-learn-bucket12"]
-  prefix     = "my-unique-prefix"
  
   location      = "NORTHAMERICA-NORTHEAST1"
   storage_class = "STANDARD"
