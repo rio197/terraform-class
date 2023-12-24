@@ -2,7 +2,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "4.30.0"
+      version = "5.10.0"
 
     }
     aws = {
@@ -12,9 +12,9 @@ terraform {
 
   }
   backend "gcs" {
-    bucket      = "your GCS bucket"
+    bucket      = "terraform-learn-bucket06"
     prefix      = "terraform/state"
-    credentials = "path to your dowloaded service account key file json file"
+    #credentials = "path to your dowloaded service account key file json file"
   }
 }
 
@@ -22,7 +22,7 @@ provider "google" {
   region      = var.region
   zone        = var.zone
   project     = var.project
-  credentials = var.credentials
+  #credentials = var.credentials
 }
 
 provider "aws" {
@@ -35,7 +35,6 @@ module "gcs_buckets" {
   project_id = var.project
   names      = ["first", "second"]
   prefix     = "my-unique-prefix"
-
 }
 
 

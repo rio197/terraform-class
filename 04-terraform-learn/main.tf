@@ -2,12 +2,12 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "4.30.0"
+      version = "5.10.0"
 
     }
   }
   backend "gcs" {
-    bucket      = "terraform-learn-bucket"
+    bucket      = "terraform-learn-bucket04"
     prefix      = "terraform/state"
     # credentials = "path to service account key file.json"
   }
