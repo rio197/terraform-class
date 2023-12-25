@@ -1,5 +1,5 @@
 module "configured_compute_engine" {
-  source = "github.com/vineet96/afforadable-compute-engine.git"
+  source = "./modules/affordable-compute-engine"
 
   ce_name                 = "compute-engine-west"
   machine_type            = var.machine_type
@@ -14,7 +14,7 @@ module "configured_compute_engine" {
 }
 
 module "configured_compute_engine_east" {
-  source = "github.com/vineet96/afforadable-compute-engine.git"
+  source = "./modules/affordable-compute-engine"
 
   ce_name                 = "compute-engine-east"
   machine_type            = var.machine_type
