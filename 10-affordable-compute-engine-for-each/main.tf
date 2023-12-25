@@ -8,7 +8,7 @@ terraform {
 
 }
 provider "google" {
-  credentials = var.credentials
+// credentials = var.credentials
   region      = var.region-west
   zone        = var.zone_west1
   project     = var.project

@@ -2,8 +2,8 @@ variable "project" {
   description = "The ID of the Google Cloud project"
 }
 
-variable "credentials" {
-}
+//variable "credentials" {
+//}
 
 variable "region-west" {
   default = "us-west1"
