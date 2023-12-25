@@ -45,8 +45,3 @@ variable "vpc_name" {
 variable "enable_apis" {
   default = true
 }
-
-
-
-
-
