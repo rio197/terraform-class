@@ -2,9 +2,9 @@ variable "project" {
 
 }
 
-variable "credentials" {
-
-}
+//variable "credentials" {
+//
+//}
 
 variable "region-west" {
   default = "us-west1"
