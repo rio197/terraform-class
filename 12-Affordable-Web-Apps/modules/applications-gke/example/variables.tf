@@ -30,18 +30,3 @@ variable "google_container_node_pool_name" {
 variable "project" {
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
