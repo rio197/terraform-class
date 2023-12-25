@@ -7,7 +7,7 @@ locals {
 }
 
 module "configured_compute_engine" {
-  source                  = "./modules/afforadable-compute-engine"
+  source                  = "./modules/affordable-compute-engine"
   for_each                = local.compute-engines
   ce_name                 = "${each.key}-${terraform.workspace}"
   machine_type            = each.value.machine_type
