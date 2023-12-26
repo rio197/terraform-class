@@ -7,9 +7,9 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket      = "your gcs bucket"
-    prefix      = ""
-    credentials = "your service account json file location"
+    bucket      = "terraform-learn-bucket"
+    prefix      = "terraform/state"
+//    credentials = "your service account json file location"
   }
 
 }
